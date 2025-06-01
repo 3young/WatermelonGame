@@ -40,6 +40,9 @@ public class GameOverController : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+
+        Time.timeScale = 0f;
+
         GameOverInfo gameOverInfo;
         gameOverInfo.playTime = playTimeController.playTime;
         gameOverInfo.score = scoreController.score;
